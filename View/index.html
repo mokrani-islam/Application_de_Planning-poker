@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../Css/style.css" rel="stylesheet" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <title></title>
+</head>
+<body>
+
+<div class="nav_bar">
+     <!-- logo PPoker-->
+    <a href="" id="momo"><i class="fa-solid fa-diamond fa-bounce" style="color: #1962e1;" ></i>Planning<span class='spa'> P</span >ok<span class='spa1'>er</span></a>
+     
+      
+    <div class="cote">
+
+        <a class="menur"><!--<i class="fa-solid fa-p"></i>--><i class="fa-solid fa-house-lock"></i></a>
+     <!--  
+        <div class="menu-deroulant">
+            
+           <ul class="menu2">
+            <li class="link2"><a href="Deconnexion.php?deconnexion=true">Se déconnecter</a></li>
+            <li class="link1"><a href="">Profil</a></li>
+           </ul>
+            
+        </div>
+    -->
+    </div>
+
+</div>
+
+   <p style="text-align: center;  margin-top: 50px; font-size: 60px; font-family:Poppins,sans-serif;"  > Planning poker pour Scrum Agile</p>
+   <p style="text-align: center;  margin-top: 50px; font-size: 40px; font-family:Poppins,sans-serif;"  > Estimer Vos User Stories</p>
+   <div style="text-align: center;  margin-top: 50px;">
+    <div class="menu-container" style="text-align: center; margin-top: 50px;">
+        <button class="btn_1">Nouvelle partie</button>
+        <!-- Menu déroulant -->
+        <div id="menu">
+            <button onclick="redirectToPage('Seul(e)')">Local</button>
+            <button onclick="redirectToPage('Multijoueur')">Online</button>
+        </div>
+    </div>
+    
+    <script>
+       function redirectToPage(gameMode) {
+        if (gameMode === 'Seul(e)') {
+            window.location.href = '../View/Creation.html';
+        } else if (gameMode === 'Multijoueur') {
+            // Ajoutez ici le code pour gérer le mode multijoueur
+            console.log('Mode multijoueur sélectionné');
+        }
+    }
+
+    function startGame(gameMode) {
+        // Ajoutez ici le code pour gérer le démarrage du jeu en fonction du mode sélectionné
+        console.log('Démarrage du jeu en mode ' + gameMode);
+    }
+    </script>
+    
+</div>
+
+</body>
+</html>

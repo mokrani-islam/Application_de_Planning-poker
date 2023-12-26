@@ -8,18 +8,20 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <title>Plannig Poker</title>
+    
+   <title>Planning Poker</title>
+
 </head>
 <body>
 
 <div class="nav_bar">
      <!-- logo PPoker-->
-    <a href="" id="momo"><i class="fa-solid fa-diamond fa-bounce" style="color: #1962e1;" ></i> Plannig<span class='spa'> P</span >ok<span class='spa1'>er</span></a>
+    <a onclick="redirectToPage('principal')"><i class="fa-solid fa-diamond fa-bounce" style="color: #1962e1;" ></i> Plannig<span class='spa'> P</span >ok<span class='spa1'>er</span></a>
      
       
     <div class="cote">
 
-        <a href="Deconnexion.php?deconnexion=true" class="menur"><!--<i class="fa-solid fa-p"></i>--><i class="fa-solid fa-house-lock"></i></a>
+        <a  class="menur"><!--<i class="fa-solid fa-p"></i>--><i class="fa-solid fa-house-lock"></i></a>
      <!--  
         <div class="menu-deroulant">
             
@@ -33,43 +35,24 @@
     </div>
 
 </div>
-
+<script>
+  function redirectToPage(gameMode) {
+   if (gameMode === 'principal') {
+       window.location.href = '../View/index.html';
+   }}
+</script>
    <p style="text-align: center;  margin-top: 50px; font-size: 60px; font-family:Poppins,sans-serif; margin-bottom: 0;"  > Création d'une nouvelle partie</p>
-  <!-- <form action="poker.php" method="post">
-      <ul>
-        <li>
-        <label for="name">Nom de la partie</label>
-        <input type="text" id="name"  placeholder="Entrez le Nom" required name="nom" />
-        </li>
-        <li>
-        <label for="tache">tache à voté </label>
-        <input type="email" id="mail" placeholder="Saisir votre tache" required name="tache"/>
-      </li>
-      <li>
-        <label for="mode">Mode du jeux</label>
-        <textarea id="msg" placeholder="Selectionner le mode " required name="mode"></textarea>
-      </li>
-    </ul>
-    <div class="button">
-
-        <input type="submit" name="creer" value="creer">  
-        
-        </div>
-  </form>
-  
-</div>
--->
-
+ 
 <div class="container">
    
-    <form action="Ajout.php" method="Post">
+    <form id="monFormulaire">
     <div class="detail">
     
     <div class="input-box">
     <span class="details">
-      Nom de la partie
+      Nom du blacklog
     </span>
-    <input type="text" placeholder="Entrez le Nom" required name="nom">
+    <input type="text" placeholder="Entrez le nom du blacklog" required name="nomP" id="nomP">
     
     </div>
     
@@ -77,10 +60,17 @@
       <span class="details">
         Nom de la tache
       </span>
-      <input type="text" placeholder="Entrez le Prénom " required name="prenom">
+      <input type="text" placeholder="Entrez le nom de la tache " required name="nom" id="nomT">
       
       </div>
-    
+      <div class="input-box">
+        <span class="details">
+          Nombre de joueurs
+        </span>
+        <input type="number" placeholder="Entrez le nombre de joueurs " required name="nom" id="nombreJ" min="0" max="90">
+        
+        </div>
+      
     
     
     
@@ -93,10 +83,11 @@
             <!--<input type="text" placeholder="entrez votre service" required>-->
             <select id="pet-select" name="grade">
               <option value="">-- Choisir un mode --</option>
-              <option value="Interne"> Moyenne </option>
-              <option value="Externe"> Médiane</option>
-              <option value="Externe"> Majorité absolue</option>
-              <option value="Externe"> Majorité relative</option>
+              <option value="stricte"> Stricte </option>
+              <option value="moyenne"> Moyenne </option>
+              <option value="mediane"> Médiane</option>
+              <option value="MA"> Majorité absolue</option>
+              <option value="MR"> Majorité relative</option>
           </select>
             </div>
     
@@ -106,14 +97,19 @@
     
     <div class="button">
     
-    <input type="submit" name="Ajouter" value="Commencer">  
+    <input type="button" name="Ajouter" value="Commencer" onclick="submitForm()">  
     </div>
     </div>
     </form>
+
+
+  
     
     
     
     
 </div>
+
+<script  src="../Model/formulaire.js"></script>
 </body>
 </html>

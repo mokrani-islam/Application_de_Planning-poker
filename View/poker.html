@@ -8,18 +8,19 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <title>Plannig Poker</title>
+    
+   <title>Planning Poker</title>
 </head>
 <body>
 
 <div class="nav_bar">
      <!-- logo PPoker-->
-    <a href="" id="momo"><i class="fa-solid fa-diamond fa-bounce" style="color: #1962e1;" ></i> Plannig<span class='spa'> P</span >ok<span class='spa1'>er</span></a>
+    <a onclick="redirectToPage('principal')"><i class="fa-solid fa-diamond fa-bounce" style="color: #1962e1;" ></i> Planning<span class='spa'> P</span >ok<span class='spa1'>er</span></a>
      
       
     <div class="cote">
 
-        <a href="Deconnexion.php?deconnexion=true" class="menur"><!--<i class="fa-solid fa-p"></i>--><i class="fa-solid fa-house-lock"></i></a>
+        <a  ><!--<i class="fa-solid fa-p"></i>--><i class="fa-solid fa-house-lock"></i></a>
      <!--  
         <div class="menu-deroulant">
             
@@ -34,12 +35,21 @@
 
 </div>
 
-<p style="text-align: center;  margin-top: 50px;"  > Donnez une Estimastion à cette Tâche</p>
-
+<script>
+   function redirectToPage(gameMode) {
+    if (gameMode === 'principal') {
+        window.location.href = '../View/index.html';
+    }}
+</script>
 <div id="Tache">
-<p> Tâche: S'athentifier à la base de donnée</p> 
-<p> Chronomètre</p>
+   <p id="sprint"> Tache : </p> 
+   </div> 
+<div class="tableJeux">
+   <p style=" margin: auto;
+   text-align: center;" id="resultat"> Choisissez une carte ! </p>
 </div>
+
+
 
 <!-- header qui aura un logo latéral gauche un peseudo et un botton de déconnexion-->
 <!-- un sous header qui aura un le nom de la taches à réaliser et un un timer à coté-->
@@ -48,44 +58,40 @@
 
   <div id="cardContainer">   
      
-     <img class="small-image" src="../Carte/cartes_0.svg" alt="Carte_0">
-     <img class="small-image" src="../Carte/cartes_1.svg" alt="Carte_1">
-     <img class="small-image" src="../Carte/cartes_3.svg" alt="Carte_3">
-     <img class="small-image" src="../Carte/cartes_5.svg" alt="Carte_5">
-     <img class="small-image" src="../Carte/cartes_8.svg" alt="Carte_8">
-     <img class="small-image" src="../Carte/cartes_13.svg" alt="Carte_13">
-     <img class="small-image" src="../Carte/cartes_20.svg" alt="Carte_20">
-     <img class="small-image" src="../Carte/cartes_40.svg" alt="Carte_40">
-     <img class="small-image" src="../Carte/cartes_100.svg" alt="Carte_100">
+     <img class="small-image" src="../Carte/cartes_0.svg" alt="0">
+     <img class="small-image" src="../Carte/cartes_1.svg" alt="1">
+     <img class="small-image" src="../Carte/cartes_3.svg" alt="3">
+     <img class="small-image" src="../Carte/cartes_5.svg" alt="5">
+     <img class="small-image" src="../Carte/cartes_8.svg" alt="8">
+     <img class="small-image" src="../Carte/cartes_13.svg" alt="13">
+     <img class="small-image" src="../Carte/cartes_20.svg" alt="20">
+     <img class="small-image" src="../Carte/cartes_40.svg" alt="40">
+     <img class="small-image" src="../Carte/cartes_100.svg" alt="100">
      <img class="small-image" src="../Carte/cartes_cafe.svg" alt="Carte_cafe">
  
 
    </div> 
 
-   <div class="messagerie">
+   <!--<div class="messagerie">
     
     <p>dsqkdm</p>
     <p>dsjqdsn</p>
     <p>dsqljjkldsq</p>
     <p>dsqljjkldsq</p>
-    <p>dsqljjkldsq</p>
-    <p>dsqljjkldsq</p>
-    <p>dsqljjkldsq</p>
-    <p>dsqljjkldsq</p>
-    <p>dsqljjkldsq</p>
+ 
    </div>
-
+-->
 </div>
-<!-- une messagerie latéral droit-->
+
 <div class="table">
    <div class="table-list">
-     <p>Listes des joeurs</p>
+     <p>Liste des joeurs</p>
    
      
        
        
        <div>
-     <button class='Ajout'> <a href=Ajout.php'>Ajouter</a></button>
+         <i class="fa-solid fa-users"></i>
        </div>
      
    
@@ -99,8 +105,7 @@
    <div class="tableau">
    <table>
    <thead>
-   <tr>
-   <th>Id</th>
+   <tr class="tr1">
    <th>Pseudo</th>
    <TH>Score</TH>
    
@@ -115,9 +120,8 @@
    <tbody>
    
                      <tr>
-                     <td>4324</td>
-                     <td>momo_85</td>
-                     <td>7</td>
+                     <td>Moi</td>
+                     <td id="islam"></td>
                     
                      
                      
@@ -146,7 +150,7 @@
 
 
 
-
-    
+  
+    <script  type="module"  src="../Model/poker.js"></script>
 </body>
 </html>
