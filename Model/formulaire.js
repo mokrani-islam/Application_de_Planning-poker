@@ -1,7 +1,7 @@
 
 /** 
 *la classe Partie
-*@method class
+*@class
 *@description constructeur de la classe Partie
 *@param {string} nomPartie nom du backlog 
 *@param {string} nomTache  nom du sprint backlog

@@ -3,19 +3,32 @@ const {calculerMediane}= require ('./Model/Test.js');
 
 describe(
 
-'test sur la moyenne ',()=>{
-
+'test sur la fonction moyenne  ',()=>{
+    /* tester quand on clique sur aucune carte et il n'y a aucun joueur  
+    *
+    */
     test('test sur la moyenne aucune valeur',()=>{
         expect(calculerMoyenne([])).toBe(0)
 
     })
     
-    test('la mediane [1, 2, 3, 4, 6, 7, 9] est 4 ',()=>{
-       expect(calculerMediane([1, 2, 3, 4, 6, 7, 9])).toBe(4)
+    test('la mediane [0, 1, 5, 8, 13, 20, 40,100] est 10 ',()=>{
+       expect(calculerMediane([0, 1, 5, 8, 13, 20, 40,100])).toBe(10.5)
 
     })
-    test('la mediane 8 et 4 est 6',()=>{
-        expect(calculerMoyenne([4,8])).toBe(6)
+    /* tester  le resultat de la moyenne sur un nombre pair de joueur 
+    *
+    */
+    test('la moyenne de 8 et 0 est  : 6',()=>{
+        expect(calculerMoyenne([0,8])).toBe(4)
+
+    })
+
+     /* tester  le resultat de la moyenne sur un nombre pair de joueur 
+    *
+    */
+     test('la moyenne de 8 et 20 et 40 est  : 68/3',()=>{
+        expect(calculerMoyenne([20,8,40])).toBe(68/3)
 
     })
 
