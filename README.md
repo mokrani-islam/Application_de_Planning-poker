@@ -15,9 +15,9 @@ Notre solution proposée est une application web basé en javascript et node js 
 <img width="913" alt="Planning poker" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/671d25ac-68bf-44ad-bf9f-c8f5239b2540">
 
 ### Environemment de travail
------------------
+
 #### installer Vs code
-lien de téléchargement [visualstudio] (https://code.visualstudio.com/download=) !
+lien de téléchargement [visualstudio] (https://code.visualstudio.com/download) !
 -----------------
 
 -----------------
