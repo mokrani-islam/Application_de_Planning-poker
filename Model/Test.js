@@ -42,11 +42,34 @@ function genererNombresAleatoires(nombreDeNombres) {
         return nombresTriés[milieu];
       }
     }
+    function valeurStricte(tableau) {
+        // Utiliser un objet pour compter les occurrences de chaque valeur
+        let occurrences = {};
+      
+        // Parcourir le tableau pour compter les occurrences
+        tableau.forEach((valeur) => {
+          occurrences[valeur] = (occurrences[valeur] || 0) + 1;
+        });
+      
+        // Trouver la valeur avec le plus grand nombre d'occurrences
+        let valeurMax = null;
+        let occurrencesMax = 0;
+      
+        for (let valeur in occurrences) {
+          if (occurrences[valeur] > occurrencesMax) {
+            valeurMax = valeur;
+            occurrencesMax = occurrences[valeur];
+          }
+        }
+      
+        return parseInt(valeurMax);
+      }
   
 module.exports ={
     genererNombresAleatoires,
     calculerMoyenne,
     calculerMediane,
+    valeurStricte,
 
 
 }

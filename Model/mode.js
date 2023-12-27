@@ -28,7 +28,7 @@ export { genererNombresAleatoires };
 * Calculer la moyenne des éstimations
 *
 *@method calculerMoyenne
-*@param {[]} nombres un tableau qui regroupe chaque estimation donné par un joueur dans un partie 
+*@param {[]} nombres un tableau qui regroupe chaque estimation donné par un joueur dans une partie 
 *@returns {number}  le résultat est nombre qui égale à la moyenne 
 *
 *
@@ -104,6 +104,6 @@ function valeurStricte(tableau) {
     }
   }
 
-  return valeurMax;
+  return parseInt(valeurMax);
 }
 export { valeurStricte };
