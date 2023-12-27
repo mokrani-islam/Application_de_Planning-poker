@@ -24,6 +24,11 @@ lien de téléchargement [nodejs] (https://nodejs.org/en)
 -----------------
 
 ### installer npm
+```bash
+
+npm install npm
+
+ ```
 ### installer jest 
 ```bash
 
