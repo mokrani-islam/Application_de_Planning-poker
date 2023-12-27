@@ -15,12 +15,16 @@ Notre solution proposée est une application web basé en javascript et node js 
 <img width="913" alt="Planning poker" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/671d25ac-68bf-44ad-bf9f-c8f5239b2540">
 
 ### Environemment de travail
-#### installer Vs code 
-#### installer le serveur local php Live serveur 
+-----------------
+#### installer Vs code
+lien de téléchargement [visualstudio] (https://code.visualstudio.com/download=) !
+-----------------
+
 -----------------
 #### Télécharger node js
 lien de téléchargement [nodejs] (https://nodejs.org/en) !
 -----------------
+
 ### installer npm
 ### installer jest 
 ```bash
@@ -28,3 +32,4 @@ lien de téléchargement [nodejs] (https://nodejs.org/en) !
 npm install --save-dev jest
 
  ```
+#### installer le serveur local php Live serveur 
