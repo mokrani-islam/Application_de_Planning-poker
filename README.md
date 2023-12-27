@@ -8,7 +8,7 @@ Notre solution proposée est une application web basé en javascript et node js 
 
 ## Mode d'utilisation 
 
-L'accès se fait uniquement via la page index qui se trouve dans le sous dossier view du dossier principal Projet , d'un clic droit sur le fichier index et après avoir séléctionné Open with live serveur la page d'acceuil apparataira à ce moment là, une fois que le curseur survolera le button '' nouvelle partie '' l'utilisateur aura le choix entre un mode local ou online cependant lors de la phase de conception nous nous sommes orientés principalement vers le mode local, pour la page de création d'une nouvelle partie il est obligatoire de remplir tout les champs de saisies et selectionné le mode de la partie pour que l'utilisateur serra redirigé vers la table du planning poker pour pouvoir jouer.
+L'accès se fait uniquement via la page index qui se trouve dans le sous dossier view du dossier principal Projet , d'un clic droit sur le fichier index et après avoir séléctionné Open with live serveur la page d'acceuil apparaîtra à ce moment là, une fois que le curseur survolera le button '' nouvelle partie '' l'utilisateur aura le choix entre un mode local ou online cependant lors de la phase de conception nous nous sommes orientés principalement vers le mode local, pour la page de création d'une nouvelle partie il est obligatoire de remplir tout les champs de saisies et selectionné le mode de la partie pour que l'utilisateur serra redirigé vers la table du planning poker pour pouvoir jouer.
 
 NB: ouvrir la page index avec Live serveur est indispensable pour le bon déroulement de la partie 
 
@@ -44,8 +44,14 @@ npm install npm
 ### installer jest 
 ```bash
 
-npm install --save-dev jest
+npm i -D jset
 
  ```
-#### installer le serveur local php Live serveur à partir des extensions de vs code
+### test unitaire
+```bash
+
+npm run test
+
+ ```
+### installer le serveur local php Live serveur à partir des extensions de vs code
 <img width="700" alt="serveur" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/cffe875b-9e1f-4d19-be5a-ca450d751804">
