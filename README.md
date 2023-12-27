@@ -17,7 +17,10 @@ Notre solution proposée est une application web basé en javascript et node js 
 ### Environemment de travail
 #### installer Vs code 
 #### installer le serveur local php Live serveur 
+-----------------
 #### Télécharger node js
+lien de téléchargement [nodejs] (https://nodejs.org/en) !
+-----------------
 ### installer npm
 ### installer jest 
 ```bash
