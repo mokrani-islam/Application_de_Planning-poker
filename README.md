@@ -17,12 +17,10 @@ Notre solution proposée est une application web basé en javascript et node js 
 ### Environemment de travail
 
 #### installer Vs code
-lien de téléchargement [visualstudio] (https://code.visualstudio.com/download) !
------------------
-
+lien de téléchargement [visualstudio] (https://code.visualstudio.com/download) 
 -----------------
 #### Télécharger node js
-lien de téléchargement [nodejs] (https://nodejs.org/en) !
+lien de téléchargement [nodejs] (https://nodejs.org/en) 
 -----------------
 
 ### installer npm
