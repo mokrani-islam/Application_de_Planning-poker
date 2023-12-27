@@ -7,7 +7,10 @@ L’estimation des charges pour la réalisation d’une action ou d’une foncti
 Notre solution proposée est une application web basé en javascript et node js , Pour la méthodologie de travail nous avons opté pour La méthode scrum au vue des contraites temporelles pendant chaque sprint nous finalisons une partie du projet que nous intégrons continuellement sur ce dépot disant , Nous testons chemain faisant notre code grâce aux tests unitaires proposé par jest et nous alimentons notre documentation soit manuellement par le baiais de commentaire où bien grâce à Jsdoc
 
 ## Mode d'utilisation 
-l'accés se fait par la page index qui se trove dans le sous dossier 
+
+L'accès se fait uniquement via la page index qui se trouve dans le sous dossier view du dossier principal Projet , d'un clic droit sur le fichier index et après avoir séléctionné Open with live serveur la page d'acceuil apparataira à ce moment là, une fois que le curseur survolera le button '' nouvelle partie '' l'utilisateur aura le choix entre un mode local ou online cependant lors de la phase de conception nous nous sommes orientés principalement vers le mode local, pour la page de création d'une nouvelle partie il est obligatoire de remplir tout les champs de saisies et selectionné le mode de la partie pour que l'utilisateur serra redirigé vers la table du planning poker pour pouvoir jouer.
+
+NB: ouvrir la page index avec Live serveur est indispensable pour le bon déroulement de la partie 
 
 
 ### Nos Interfaces
