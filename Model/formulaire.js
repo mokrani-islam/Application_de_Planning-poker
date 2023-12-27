@@ -8,6 +8,9 @@
 *@param {string} modeJeu   le mode du jeu de la partie 
 *@param {number} nombreJoeur nombre de joueurs dans la partie
 
+
+
+
 */
 class Partie {
    /** 
