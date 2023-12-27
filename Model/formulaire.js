@@ -72,7 +72,7 @@ function submitForm() {
     let maPartie = new Partie( partie, tache, NombreJoueur,Mode);
     localStorage.setItem('maPartie', JSON.stringify(maPartie));
     maPartie.afficherDetails();
-    // Rediriger vers une autre page avec les données de l'objet
-    //var queryString = Object.keys(maPartie).map(key => key + '=' + encodeURIComponent(maPartie[key])).join('&');
-    window.location.href = '../View/poker.html';
+   // Cette ligne permet de rediriger le navigateur où pas selon les champs saisie
+   // c'est à dire c'est un champ manque parmis les quatres il ne serra pas rediriger !c
+   if( maPartie.nomPartie!== '' && maPartie.nomTache!== '' && maPartie.modeJeu!== '' && maPartie.nombreJoeur!== '' ) {window.location.href = '../View/poker.html';}
 }

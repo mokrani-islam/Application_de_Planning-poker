@@ -74,13 +74,15 @@ if(maPartie.nombreJoeur=='mediane'){
 
     if( entier == resultatMediane ){
 
+
+       // Swal.fire("SweetAlert2 is working!");
     alert("Bravo ! Votre carte est : " + entier +" "+"et la Médiane est : "+resultatMediane  );
    
     }
     
     else{
-        
-    alert("Maleureusement Votre carte est : " + carte.alt +" et la Médiane est : "+ resultatMediane );
+      //  Swal.fire("SweetAlert2 is working!");
+   alert("Maleureusement Votre carte est : " + carte.alt +" et la Médiane est : "+ resultatMediane );
     
     }
 
@@ -126,8 +128,7 @@ if(maPartie.nombreJoeur=='moyenne'){
 
 }
 
- var resultat =document.getElementById('resultat');
- resultat.innerHTML = nombreAleatoire; 
+ 
  
   });
 });
