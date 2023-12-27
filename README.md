@@ -4,12 +4,14 @@ L’estimation des charges pour la réalisation d’une action ou d’une foncti
 
 ## Présentation du Projet 
 
-Notre solution proposée est une application web basé en javascript et node js , Pour la méthodologie de travail nous avons opté pour La méthode scrum au vue des contraites temporelles pendant chaque sprint nous finalisons une partie du projet   
+Notre solution proposée est une application web basé en javascript et node js , Pour la méthodologie de travail nous avons opté pour La méthode scrum au vue des contraites temporelles pendant chaque sprint nous finalisons une partie du projet que nous intégrons continuellement sur ce dépot disant , Nous testons chemain faisant notre code grâce aux tests unitaires proposé par jest et nous alimentons notre documentation soit manuellement par le baiais de commentaire où bien grâce à Jsdoc 
 
-### index
+### Nos Interfaces
 
 <img width="891" alt="Index1" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/11565c30-90e3-4c56-b54b-9dd288fbc8b1">
 
 <img width="905" alt="ajout" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/ac0d1ebf-e5d1-46d3-9b13-1e5e482a1446">
 
 <img width="913" alt="Planning poker" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/671d25ac-68bf-44ad-bf9f-c8f5239b2540">
+
+### Environemment de travail
