@@ -35,4 +35,5 @@ npm install npm
 npm install --save-dev jest
 
  ```
-#### installer le serveur local php Live serveur 
+#### installer le serveur local php Live serveur à partir d'une recherche sur les extensions de vs code
+<img width="960" alt="serveur" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/cffe875b-9e1f-4d19-be5a-ca450d751804">
