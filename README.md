@@ -4,7 +4,11 @@ L’estimation des charges pour la réalisation d’une action ou d’une foncti
 
 ## Présentation du Projet 
 
-Notre solution proposée est une application web basé en javascript et node js , Pour la méthodologie de travail nous avons opté pour La méthode scrum au vue des contraites temporelles pendant chaque sprint nous finalisons une partie du projet que nous intégrons continuellement sur ce dépot disant , Nous testons chemain faisant notre code grâce aux tests unitaires proposé par jest et nous alimentons notre documentation soit manuellement par le baiais de commentaire où bien grâce à Jsdoc 
+Notre solution proposée est une application web basé en javascript et node js , Pour la méthodologie de travail nous avons opté pour La méthode scrum au vue des contraites temporelles pendant chaque sprint nous finalisons une partie du projet que nous intégrons continuellement sur ce dépot disant , Nous testons chemain faisant notre code grâce aux tests unitaires proposé par jest et nous alimentons notre documentation soit manuellement par le baiais de commentaire où bien grâce à Jsdoc
+
+## Mode d'utilisation 
+l'accés se fait par la page index qui se trove dans le sous dossier 
+
 
 ### Nos Interfaces
 
@@ -17,23 +21,28 @@ Notre solution proposée est une application web basé en javascript et node js 
 ### Environemment de travail
 
 #### installer Vs code
-lien de téléchargement [visualstudio] (https://code.visualstudio.com/download) 
+
+lien de téléchargement [visualstudio] (https://code.visualstudio.com/download)
 -----------------
 #### Télécharger node js
-lien de téléchargement [nodejs] (https://nodejs.org/en) 
+
+
+lien de téléchargement [nodejs] (https://nodejs.org/en)
 -----------------
 
+      
 ### installer npm
 ```bash
 
 npm install npm
 
  ```
+
 ### installer jest 
 ```bash
 
 npm install --save-dev jest
 
  ```
-#### installer le serveur local php Live serveur à partir d'une recherche sur les extensions de vs code
-<img width="960" alt="serveur" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/cffe875b-9e1f-4d19-be5a-ca450d751804">
+#### installer le serveur local php Live serveur à partir des extensions de vs code
+<img width="700" alt="serveur" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/cffe875b-9e1f-4d19-be5a-ca450d751804">
