@@ -7,3 +7,4 @@ L’estimation des charges pour la réalisation d’une action ou d’une foncti
 Notre solution proposée est une application web basé en javascript et node js , l'utilisateur doit choisir tout d'abord un des modes de jeux soit local soit online 
 
 <img width="891" alt="Index1" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/11565c30-90e3-4c56-b54b-9dd288fbc8b1">
+<img width="905" alt="ajout" src="https://github.com/mokrani-islam/Planning-poker-/assets/84641582/ac0d1ebf-e5d1-46d3-9b13-1e5e482a1446">
