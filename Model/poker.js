@@ -2,6 +2,7 @@ import  { calculerMoyenne } from './mode.js';
 import  { genererNombresAleatoires } from './mode.js';
 import {calculerMediane} from './mode.js';
 import {valeurStricte} from './mode.js';
+import {MajoriteAbsolue} from './mode.js';
 
 
 
@@ -48,27 +49,28 @@ cartes.forEach(function(carte) {
 carte.addEventListener('click', function() {
 
 var altValue = carte.alt;
-var entier = parseInt(altValue);
+if  ( altValue != "intrro" && altValue != "Carte_cafe")  {var entier = parseInt(altValue);}
+
 
 var monParagrapheElement = document.getElementById("islam");
 
         // Modification du contenu de l'élément p avec la valeur de la variable
     monParagrapheElement.textContent = entier;
 
+if(altValue=="intrro"){alert('besoin de temps de refléxion')}
+if(altValue=="Carte_cafe"){alert('besoin de faire une pause')} 
+if(maPartie.nombreJoeur=='MA' && altValue != "intrro" && altValue != "Carte_cafe" ){
 
+    const mg = genererNombresAleatoires(maPartie.modeJeu); 
+    const majoriAB = MajoriteAbsolue(genererNombresAleatoires(maPartie.modeJeu)) ;
+    if( majoriAB == true && entier == mg[0] ){
+        alert("Bravo ! Votre carte est : " + entier +" "+"et la Majorité absolue est : "+mg[0] );
 
-if(maPartie.nombreJoeur=='MA'){
-
-    if(nombreAleatoire == entier){
-    alert("vous avez réussis: " + carte.alt +""+ nombreAleatoire);
-
-}else{alert("Maleureusement Votre carte est : " + carte.alt +""+ nombreAleatoire);}
-
-
+    } else 
+    { alert("Malheureusement Votre carte est : " + entier +"");}
 }
 
-
-if(maPartie.nombreJoeur=='mediane'){
+if(maPartie.nombreJoeur=='mediane' && ( altValue != "intrro" && altValue != "Carte_cafe") ){
 
     const resultatMediane = calculerMediane(genererNombresAleatoires(maPartie.modeJeu)) ;
 
@@ -82,7 +84,7 @@ if(maPartie.nombreJoeur=='mediane'){
     
     else{
       //  Swal.fire("SweetAlert2 is working!");
-   alert("Maleureusement Votre carte est : " + carte.alt +" et la Médiane est : "+ resultatMediane );
+   alert("Malheureusement Votre carte est : " + carte.alt +" et la Médiane est : "+ resultatMediane );
     
     }
 
@@ -90,7 +92,7 @@ if(maPartie.nombreJoeur=='mediane'){
 }
 
 
-if(maPartie.nombreJoeur=='stricte'){
+if(maPartie.nombreJoeur=='stricte' && ( altValue != "intrro" && altValue != "Carte_cafe") ){
 
     const resultatstrict = valeurStricte(genererNombresAleatoires(maPartie.modeJeu)) ;
 
@@ -102,28 +104,28 @@ if(maPartie.nombreJoeur=='stricte'){
     
     else{
         
-    alert("Maleureusement Votre carte est : " + carte.alt +" et la valeur stricte est : "+ resultatstrict );
+    alert("Malheureusement Votre carte est : " + carte.alt +" et la valeur stricte est : "+ resultatstrict );
     
     }
 
 
 }
 
-if(maPartie.nombreJoeur=='MR'){
+if(maPartie.nombreJoeur=='MR' && ( altValue != "intrro" && altValue != "Carte_cafe")){
 
     if(nombreAleatoire == entier){
     alert("Bravo ! Votre carte est :"+ carte.alt +""+ nombreAleatoire);
 
-}else{alert("Maleureusement Votre carte est : "+ carte.alt +""+ nombreAleatoire);}
+}else{alert("Malheureusement Votre carte est : "+ carte.alt +""+ nombreAleatoire);}
 
 
 }
-if(maPartie.nombreJoeur=='moyenne'){
+if(maPartie.nombreJoeur=='moyenne' && ( altValue != "intrro" && altValue != "Carte_cafe") ){
     const Moy=parseInt(calculerMoyenne(genererNombresAleatoires(maPartie.modeJeu))) 
     if(Moy== entier){
     alert("Bravo ! Votre carte est : " + carte.alt +" la moyenne est  "+ Moy);
 
-}else{alert("Maleureusement Votre carte est : " + carte.alt +" la moyenne est "+ Moy);}
+}else{alert("Malheureusement Votre carte est : " + carte.alt +" la moyenne est "+ Moy);}
 
 
 }

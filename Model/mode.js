@@ -107,3 +107,25 @@ function valeurStricte(tableau) {
   return parseInt(valeurMax);
 }
 export { valeurStricte };
+
+
+function MajoriteAbsolue( tableau ){
+let j = 0 
+for (let i = 1; i < tableau.length; i++) {
+    if (tableau[i] == tableau[0]) {
+
+       j= j+1;
+    }
+if(j=== tableau.length){
+
+return true }else{
+  return false
+
+}
+
+}
+
+
+}
+
+export{MajoriteAbsolue}
